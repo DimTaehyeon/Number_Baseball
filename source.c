@@ -20,10 +20,16 @@ int main() {
 	printf("세 자리 숫자를 맞춰보세요! : ");
 	scanf_s("%d %d %d", &UserA, &UserB, &UserC); //공백 없이도 입력받는 법 찾기
 
-	printf("입력한 숫자 : %d %d %d", UserA, UserB, UserC);
+	printf("\n입력한 숫자 : %d %d %d\n", UserA, UserB, UserC);
 
+	int ball = 0, strike = 0, out = 0;
 
-	while (UserA == ComA && UserB = ComB && UserC == ComC) {
+	while (UserA != ComA && UserB != ComB && UserC != ComC) {
+		if (UserA == ComB || UserA == ComC) {
+			++ball;
+			printf("%d", ball);
+		}
 	}
+
 	return 0;
 }
